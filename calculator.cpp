@@ -302,9 +302,19 @@ void BitwiseOperations()
 void DivisibilityTest()
 {
 	ll number;
+	cout<<"You can determine by which digits this number can be divisible.\n";
+	cout<<"Enter a number:\n";
 	cin>>number;
-	
 
+	vi v;
+	for(int i=2;i<=9;i++) v.pb(i);
+	for0(i,sz(v))
+    {
+    	if( !(number%v[i]) )
+    	{
+    		cout<<"It is divisible by "<<v[i]<<"\n";
+    	}
+    }
 }
 
 
@@ -318,6 +328,7 @@ int main()
 	cout<<"1. Arithmetic Operations."<<"\n";
 	cout<<"2. Bitwise Operations."<<"\n";
 	cout<<"3. Test Divisibility of a number.\n";
+	
 
 	int option;
 	cin>>option;
