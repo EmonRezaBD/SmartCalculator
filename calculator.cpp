@@ -317,6 +317,32 @@ void DivisibilityTest()
     }
 }
 
+bool isPrime(ll number)
+{
+	if(number<=1)
+		return false;
+	for(ll i=2; i*i<=number ; i++)
+	{
+		if(number%i==0)
+			return false;
+	}
+	return true;
+	
+}
+
+void PrimalityTest()
+{
+	ll number;
+	cout<<"You can check a number is prime or not.\n";
+	cout<<"Enter a number:\n";
+
+	cin>>number;
+
+	(isPrime(number))? cout<<"It is a prime number.\n" : cout<<"It is not a prime number.\n";
+}
+
+
+
 
 
 int main()
@@ -328,7 +354,7 @@ int main()
 	cout<<"1. Arithmetic Operations."<<"\n";
 	cout<<"2. Bitwise Operations."<<"\n";
 	cout<<"3. Test Divisibility of a number.\n";
-	
+	cout<<"4. Primality Test.\n";
 
 	int option;
 	cin>>option;
@@ -348,6 +374,11 @@ int main()
 		case 3:
 		{
 			DivisibilityTest();
+			break;
+		}
+		case 4:
+		{
+			PrimalityTest();
 			break;
 		}
 		default:
