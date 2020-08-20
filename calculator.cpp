@@ -410,9 +410,9 @@ void RootsOfPolynomial()
 	cout<<"Enter the co-efficients: \n\n";
 	cin>>a>>b>>c;
 
-	ll determinant = sqrt((b*b)-(4*a*c));
+	double determinant = sqrt((b*b)-(4*a*c));
 
-	ll x1=0,x2=0;
+	 double x1=0,x2=0;
 	if(determinant>=0)
 	{
 		x1 = (-b+determinant)/(2*a);
@@ -423,7 +423,11 @@ void RootsOfPolynomial()
 	}
 	else
 	{
-		
+		cout<<"Imaginery Roots are: \n";
+		deb(sqrt((4*a*c)-b*b));
+
+		cout<<"x1: "<<"(-"<< b <<"/"<<2*a<<")+("<<sqrt((4*a*c)-(b*b))<<"i)"<<"/"<<2*a<<" "; 
+		cout<<"x2: "<<"(-"<< b <<"/"<<2*a<<")-("<<sqrt((4*a*c)-(b*b))<<"i)"<<"/"<<2*a<<" "; 
 	}
 
 }
