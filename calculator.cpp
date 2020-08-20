@@ -119,6 +119,7 @@ ll LCM(ll a ,ll b)
 {
 	return (a*b)/GCD(a,b);
 }
+
 void ArithmeticOperations()
 {
 	cout<<"Choose an option: \n";
@@ -202,7 +203,7 @@ void ArithmeticOperations()
 			break;
 			
 		}
-		case 6:
+		case 6://********************
 		{
 			break;
 		}
@@ -383,8 +384,30 @@ void PrimalityTest()
 	(isPrime(number))? cout<<"It is a prime number.\n" : cout<<"It is not a prime number.\n";
 }
 
+void PalindromicTest()
+{
+	cout<<"Enter a number: \n";
+	ll number;
+	cin >> number;
 
+	ll original = number;
 
+	ll remainder,reverseNumber=0;
+
+	while(number!=0)
+	{
+		remainder=number%10;
+		reverseNumber = reverseNumber*10+remainder; //Constructing a number.
+		// deb(reverseNumber);
+		number/=10;
+	}
+	(original==reverseNumber)? cout<<"It is a plaindrome number.\n" : cout<<"It is not a Palindrome number.\n";
+}
+
+void AgeCalculation()
+{
+
+}
 
 
 int main()
@@ -398,6 +421,7 @@ int main()
 	cout<<"3. Test Divisibility of a number.\n";
 	cout<<"4. Primality Test.\n";
 	cout<<"5. Palindromic Test.\n";
+	cout<<"6. Age Calculaion.\n";
 
 	int option;
 	cin>>option;
@@ -422,6 +446,16 @@ int main()
 		case 4:
 		{
 			PrimalityTest();
+			break;
+		}
+		case 5:
+		{
+			PalindromicTest();
+			break;
+		}
+		case 6:
+		{
+			AgeCalculation();
 			break;
 		}
 		default:
