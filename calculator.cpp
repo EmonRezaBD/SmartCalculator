@@ -115,6 +115,8 @@ void ArithmeticOperations()
 	cout<<"4. Division.\n";
 	cout<<"5. Modulus.\n";
 	cout<<"6. BigMod.\n";
+	cout<<"7. GCD.\n";
+	cout<<"8. LCM.\n";
 
 
 
@@ -186,6 +188,18 @@ void ArithmeticOperations()
 			cout<<"Modulus of "<<num1<<"%"<<num2<<" is: "<<num1%num2<<"\n";
 			break;
 			
+		}
+		case 6:
+		{
+			break;
+		}
+		case 7:
+		{
+			break;
+		}
+		case 8:
+		{
+			break;
 		}
 		default:
 		{
@@ -355,6 +369,7 @@ int main()
 	cout<<"2. Bitwise Operations."<<"\n";
 	cout<<"3. Test Divisibility of a number.\n";
 	cout<<"4. Primality Test.\n";
+	cout<<"5. Palindromic Test.\n";
 
 	int option;
 	cin>>option;
