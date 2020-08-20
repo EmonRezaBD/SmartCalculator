@@ -432,6 +432,38 @@ void RootsOfPolynomial()
 
 }
 
+void ImagineryNumbers()
+{
+	cout<<"Choose option:\n";
+	cout<<"1.Addition\n";
+	cout<<"2.Subtraction\n";
+	cout<<"3.Multiplication\n";
+	cout<<"4.Division\n";
+
+	int option;
+	cin>>option;
+
+	switch(option)
+	{
+		case 1:
+		{
+			break;
+		}
+		case 2:
+		{
+			break;
+		}
+		case 3:
+		{
+			break;
+		}
+		case 4:
+		{
+			break;
+		}
+	}
+
+}
 
 int main()
 {
@@ -445,6 +477,7 @@ int main()
 	cout<<"4. Primality Test.\n";
 	cout<<"5. Palindromic Test.\n";
 	cout<<"6. Roots of 2 degree polynomial.\n";
+	cout<<"7. Imagenary Numbers.\n";
 
 
 	int option;
@@ -480,6 +513,11 @@ int main()
 		case 6:
 		{
 			RootsOfPolynomial();
+			break;
+		}
+		case 7:
+		{
+			ImagineryNumbers();
 			break;
 		}
 		default:
