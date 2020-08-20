@@ -2,6 +2,7 @@
 #pragma GCC  target("avx,avx2,fma")
  
 #include<bits/stdc++.h>
+#include<algorithm>
 //#include<unordered_map>
 //#include <ext/pb_ds/assoc_container.hpp>
 //using namespace __gnu_pbds;
@@ -104,7 +105,15 @@ const ll                mod = 1000000000 + 7;
 // {
 // 	return c-'0';
 // }
- 
+
+ll GCD(ll a, ll b)
+{
+	if(a==b)
+		return a;
+	if(b==0)
+		return a;
+	return GCD(b,a%b);
+} 
 
 void ArithmeticOperations()
 {
@@ -195,6 +204,13 @@ void ArithmeticOperations()
 		}
 		case 7:
 		{
+			cout<<"GCD.\n\n";
+			cout<<"Enter two numbers: \n";
+			ll a,b;
+			cin>>a>>b;
+
+			cout<<"GCD is: "<<GCD(a,b)<<"\n";
+
 			break;
 		}
 		case 8:
