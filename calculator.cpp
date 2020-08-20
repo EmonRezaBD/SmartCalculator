@@ -404,8 +404,27 @@ void PalindromicTest()
 	(original==reverseNumber)? cout<<"It is a plaindrome number.\n" : cout<<"It is not a Palindrome number.\n";
 }
 
-void AgeCalculation()
+void RootsOfPolynomial()
 {
+	ll a,b,c;
+	cout<<"Enter the co-efficients: \n\n";
+	cin>>a>>b>>c;
+
+	ll determinant = sqrt((b*b)-(4*a*c));
+
+	ll x1=0,x2=0;
+	if(determinant>=0)
+	{
+		x1 = (-b+determinant)/(2*a);
+		x2 = (-b-determinant)/(2*a);
+		cout<<"Roots are: \n";
+		cout<<"x1: "<<x1<<" "<<"x2: "<<x2<<"\n";
+
+	}
+	else
+	{
+		
+	}
 
 }
 
@@ -421,7 +440,8 @@ int main()
 	cout<<"3. Test Divisibility of a number.\n";
 	cout<<"4. Primality Test.\n";
 	cout<<"5. Palindromic Test.\n";
-	cout<<"6. Age Calculaion.\n";
+	cout<<"6. Roots of 2 degree polynomial.\n";
+
 
 	int option;
 	cin>>option;
@@ -455,7 +475,7 @@ int main()
 		}
 		case 6:
 		{
-			AgeCalculation();
+			RootsOfPolynomial();
 			break;
 		}
 		default:
