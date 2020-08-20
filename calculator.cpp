@@ -115,6 +115,10 @@ ll GCD(ll a, ll b)
 	return GCD(b,a%b);
 } 
 
+ll LCM(ll a ,ll b)
+{
+	return (a*b)/GCD(a,b);
+}
 void ArithmeticOperations()
 {
 	cout<<"Choose an option: \n";
@@ -215,6 +219,14 @@ void ArithmeticOperations()
 		}
 		case 8:
 		{
+			cout<<"LCM.\n\n";
+			cout<<"Enter two numbers: \n";
+			ll a,b;
+			cin>>a>>b;
+
+			cout<<"LCM is: "<<LCM(a,b)<<"\n";
+
+
 			break;
 		}
 		default:
