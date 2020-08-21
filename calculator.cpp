@@ -442,15 +442,32 @@ void ImagineryNumbers()
 
 	int option;
 	cin>>option;
+	
 
 	switch(option)
 	{
 		case 1:
 		{
+			cout<<"Addition: \n\n";
+			cout<<"Enter the co-ordinates: \n";
+
+			int x1,x2,y1,y2;
+			cin>>x1>>y1>>x2>>y2;
+
+			cout<<"result: "<<(x1+x2);
+			((y1+y2)<0)? cout<<(y1+y2)<<"i\n" : cout<<"+"<<(y1+y2)<<"i\n";
 			break;
 		}
 		case 2:
 		{
+			cout<<"Subtraction: \n\n";
+			cout<<"Enter the co-ordinates: \n";
+
+			int x1,x2,y1,y2;
+			cin>>x1>>y1>>x2>>y2;
+
+			cout<<"result: "<<(x1-x2);
+			((y1+y2)<0)? cout<<(y1-y2)<<"i\n" : cout<<"+"<<(y1-y2)<<"i\n";
 			break;
 		}
 		case 3:
