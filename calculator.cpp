@@ -472,6 +472,14 @@ void ImagineryNumbers()
 		}
 		case 3:
 		{
+			cout<<"Multiplication: \n\n";
+			cout<<"Enter the co-ordinates: \n";
+
+			int x1,x2,y1,y2;
+			cin>>x1>>y1>>x2>>y2;
+
+			cout<<"result: "<<(x1*x2)+(-1)*(y1*y2)<<"+"<<(x1*y2)+(y1*x2)<<"i\n";
+
 			break;
 		}
 		case 4:
